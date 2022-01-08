@@ -95,8 +95,10 @@ public class Bot extends ListenerAdapter {
 		
 		LinkedList<String> blacklist = new LinkedList<String>();
 		blacklist.clear();
-		//blacklist.addLast("Socket");
-		//blacklist.addLast("Thread");
+		
+		//Blacklisted
+		blacklist.addLast("Socket");
+		blacklist.addLast("Thread");
 		
 		
 		String[] strgs = code.split(" ");
